@@ -31,9 +31,6 @@ public class TaskModel implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-
-    @Column(nullable = false)
-    private Boolean done;
     
     @Column(nullable = false, unique = true)
     private String task;
